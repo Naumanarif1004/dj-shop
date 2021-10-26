@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+    Z-store
+{% endblock %}
+{% block content %}
+
+    <div class="text-center">
+        <br>
+        <br>
+        <h1 class="text-center product_title">
+            Thanks for placing your order
+        </h1>
+        <br>
+        <br>
+    <p>
+        your order number is: <b>{{ customer_id.id }}</b>
+    </p>
+        <br>
+    <p>
+        we have received your order and will begin processing right away.
+        An email confirmation has been sent to you. It contains details of the items you purchased
+    </p>
+    </div>
+
+{% endblock %}
